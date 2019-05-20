@@ -31,6 +31,20 @@ class ViewController: UIViewController {
         }
             
         
+        let lalbel =  UILabel().dnp
+            .text("122333")
+            .font(12)
+            .textAlignment(.center)
+            .textColor(UIColor.cyan)
+            .backgroundColor(UIColor.magenta)
+            .lineBreakMode(.byCharWrapping)
+            .addToSuperView(self.view)
+            .makeSnapKit { (make) in
+                make.left.equalToSuperview()
+                make.top.equalTo(300)
+            }.view
+        
+        self.view.addSubview(lalbel)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

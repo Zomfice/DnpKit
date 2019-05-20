@@ -27,6 +27,12 @@ public extension DnpChain where ObjectType: UILabel {
     }
     
     @discardableResult
+    func boldFont(_ ofSize: CGFloat) -> DnpChain {
+        self.chain.font = UIFont.boldSystemFont(ofSize: ofSize)
+        return self
+    }
+    
+    @discardableResult
     func textColor(_ textColor: UIColor) -> DnpChain {
         self.chain.textColor = textColor
         return self

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView{
+public extension UIView{
     var origin: CGPoint{
         get{
             return self.frame.origin
