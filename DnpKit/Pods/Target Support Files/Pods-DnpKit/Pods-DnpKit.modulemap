@@ -1,0 +1,6 @@
+framework module Pods_DnpKit {
+  umbrella header "Pods-DnpKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

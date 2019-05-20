@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B66E60AC593C7BDD974B8675 /* Pods_DnpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720C1272169457F8FC6BB39 /* Pods_DnpKit.framework */; };
+		EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA02292547000CC00F3 /* AppDelegate.swift */; };
+		EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA22292547000CC00F3 /* ViewController.swift */; };
+		EF2A6AA62292547000CC00F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA42292547000CC00F3 /* Main.storyboard */; };
+		EF2A6AA82292547200CC00F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA72292547200CC00F3 /* Assets.xcassets */; };
+		EF2A6AAB2292547200CC00F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA92292547200CC00F3 /* LaunchScreen.storyboard */; };
+		EF2A6AB62292547200CC00F3 /* DnpKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AB52292547200CC00F3 /* DnpKitTests.swift */; };
+		EF2A6AC12292547200CC00F3 /* DnpKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AC02292547200CC00F3 /* DnpKitUITests.swift */; };
+		EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AD022925A5800CC00F3 /* DnpChain.swift */; };
+		EF2A6AD322925C0000CC00F3 /* DnpChainCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */; };
+		EF2A6ADA229260AD00CC00F3 /* UIView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */; };
+		EF2A6ADC2292793900CC00F3 /* UIView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6ADB2292793900CC00F3 /* UIView+Category.swift */; };
+		EF2A6ADE2292A00B00CC00F3 /* UILabel+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */; };
+		EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF2A6AB22292547200CC00F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2A6A952292547000CC00F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2A6A9C2292547000CC00F3;
+			remoteInfo = DnpKit;
+		};
+		EF2A6ABD2292547200CC00F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2A6A952292547000CC00F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2A6A9C2292547000CC00F3;
+			remoteInfo = DnpKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0503215E1C2C0EBE929C793F /* Pods-DnpKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnpKit.release.xcconfig"; path = "Target Support Files/Pods-DnpKit/Pods-DnpKit.release.xcconfig"; sourceTree = "<group>"; };
+		9720C1272169457F8FC6BB39 /* Pods_DnpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DnpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B842EE2428160B1408CD904D /* Pods-DnpKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnpKit.debug.xcconfig"; path = "Target Support Files/Pods-DnpKit/Pods-DnpKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2A6A9D2292547000CC00F3 /* DnpKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2A6AA02292547000CC00F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF2A6AA22292547000CC00F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF2A6AA52292547000CC00F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF2A6AA72292547200CC00F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF2A6AAA2292547200CC00F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF2A6AAC2292547200CC00F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2A6AB12292547200CC00F3 /* DnpKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnpKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2A6AB52292547200CC00F3 /* DnpKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnpKitTests.swift; sourceTree = "<group>"; };
+		EF2A6AB72292547200CC00F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2A6ABC2292547200CC00F3 /* DnpKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnpKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2A6AC02292547200CC00F3 /* DnpKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnpKitUITests.swift; sourceTree = "<group>"; };
+		EF2A6AC22292547200CC00F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2A6AD022925A5800CC00F3 /* DnpChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnpChain.swift; sourceTree = "<group>"; };
+		EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnpChainCompatible.swift; sourceTree = "<group>"; };
+		EF2A6AD422925EF000CC00F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EF2A6AD522925F8A00CC00F3 /* DnpKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DnpKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Chain.swift"; sourceTree = "<group>"; };
+		EF2A6ADB2292793900CC00F3 /* UIView+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Category.swift"; sourceTree = "<group>"; };
+		EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Chain.swift"; sourceTree = "<group>"; };
+		EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Chain.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF2A6A9A2292547000CC00F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66E60AC593C7BDD974B8675 /* Pods_DnpKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6AAE2292547200CC00F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6AB92292547200CC00F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320DF2DC3B2272286CE870A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B842EE2428160B1408CD904D /* Pods-DnpKit.debug.xcconfig */,
+				0503215E1C2C0EBE929C793F /* Pods-DnpKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4A0E144F073E625733F0503 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9720C1272169457F8FC6BB39 /* Pods_DnpKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF2A6A942292547000CC00F3 = {
+			isa = PBXGroup;
+			children = (
+				EF2A6A9F2292547000CC00F3 /* DnpKit */,
+				EF2A6AB42292547200CC00F3 /* DnpKitTests */,
+				EF2A6ABF2292547200CC00F3 /* DnpKitUITests */,
+				EF2A6A9E2292547000CC00F3 /* Products */,
+				320DF2DC3B2272286CE870A9 /* Pods */,
+				E4A0E144F073E625733F0503 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF2A6A9E2292547000CC00F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6A9D2292547000CC00F3 /* DnpKit.app */,
+				EF2A6AB12292547200CC00F3 /* DnpKitTests.xctest */,
+				EF2A6ABC2292547200CC00F3 /* DnpKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF2A6A9F2292547000CC00F3 /* DnpKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6ACF229258BC00CC00F3 /* Source */,
+				EF2A6AA02292547000CC00F3 /* AppDelegate.swift */,
+				EF2A6AA22292547000CC00F3 /* ViewController.swift */,
+				EF2A6AD422925EF000CC00F3 /* PrefixHeader.pch */,
+				EF2A6AA42292547000CC00F3 /* Main.storyboard */,
+				EF2A6AA72292547200CC00F3 /* Assets.xcassets */,
+				EF2A6AA92292547200CC00F3 /* LaunchScreen.storyboard */,
+				EF2A6AAC2292547200CC00F3 /* Info.plist */,
+				EF2A6AD522925F8A00CC00F3 /* DnpKit-Bridging-Header.h */,
+			);
+			path = DnpKit;
+			sourceTree = "<group>";
+		};
+		EF2A6AB42292547200CC00F3 /* DnpKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6AB52292547200CC00F3 /* DnpKitTests.swift */,
+				EF2A6AB72292547200CC00F3 /* Info.plist */,
+			);
+			path = DnpKitTests;
+			sourceTree = "<group>";
+		};
+		EF2A6ABF2292547200CC00F3 /* DnpKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6AC02292547200CC00F3 /* DnpKitUITests.swift */,
+				EF2A6AC22292547200CC00F3 /* Info.plist */,
+			);
+			path = DnpKitUITests;
+			sourceTree = "<group>";
+		};
+		EF2A6ACF229258BC00CC00F3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6AD022925A5800CC00F3 /* DnpChain.swift */,
+				EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */,
+				EF2A6ADB2292793900CC00F3 /* UIView+Category.swift */,
+				EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */,
+				EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */,
+				EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF2A6A9C2292547000CC00F3 /* DnpKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2A6AC52292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKit" */;
+			buildPhases = (
+				580DEC87350689138F1DE8FC /* [CP] Check Pods Manifest.lock */,
+				EF2A6A992292547000CC00F3 /* Sources */,
+				EF2A6A9A2292547000CC00F3 /* Frameworks */,
+				EF2A6A9B2292547000CC00F3 /* Resources */,
+				3145EF5E783D1E86BA614D5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DnpKit;
+			productName = DnpKit;
+			productReference = EF2A6A9D2292547000CC00F3 /* DnpKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF2A6AB02292547200CC00F3 /* DnpKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2A6AC82292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKitTests" */;
+			buildPhases = (
+				EF2A6AAD2292547200CC00F3 /* Sources */,
+				EF2A6AAE2292547200CC00F3 /* Frameworks */,
+				EF2A6AAF2292547200CC00F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF2A6AB32292547200CC00F3 /* PBXTargetDependency */,
+			);
+			name = DnpKitTests;
+			productName = DnpKitTests;
+			productReference = EF2A6AB12292547200CC00F3 /* DnpKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF2A6ABB2292547200CC00F3 /* DnpKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2A6ACB2292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKitUITests" */;
+			buildPhases = (
+				EF2A6AB82292547200CC00F3 /* Sources */,
+				EF2A6AB92292547200CC00F3 /* Frameworks */,
+				EF2A6ABA2292547200CC00F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF2A6ABE2292547200CC00F3 /* PBXTargetDependency */,
+			);
+			name = DnpKitUITests;
+			productName = DnpKitUITests;
+			productReference = EF2A6ABC2292547200CC00F3 /* DnpKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF2A6A952292547000CC00F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Zomfice;
+				TargetAttributes = {
+					EF2A6A9C2292547000CC00F3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					EF2A6AB02292547200CC00F3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EF2A6A9C2292547000CC00F3;
+					};
+					EF2A6ABB2292547200CC00F3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EF2A6A9C2292547000CC00F3;
+					};
+				};
+			};
+			buildConfigurationList = EF2A6A982292547000CC00F3 /* Build configuration list for PBXProject "DnpKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF2A6A942292547000CC00F3;
+			productRefGroup = EF2A6A9E2292547000CC00F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF2A6A9C2292547000CC00F3 /* DnpKit */,
+				EF2A6AB02292547200CC00F3 /* DnpKitTests */,
+				EF2A6ABB2292547200CC00F3 /* DnpKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF2A6A9B2292547000CC00F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2A6AAB2292547200CC00F3 /* LaunchScreen.storyboard in Resources */,
+				EF2A6AA82292547200CC00F3 /* Assets.xcassets in Resources */,
+				EF2A6AA62292547000CC00F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6AAF2292547200CC00F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6ABA2292547200CC00F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3145EF5E783D1E86BA614D5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DnpKit/Pods-DnpKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DnpKit/Pods-DnpKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580DEC87350689138F1DE8FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DnpKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF2A6A992292547000CC00F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2A6AD322925C0000CC00F3 /* DnpChainCompatible.swift in Sources */,
+				EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */,
+				EF2A6ADC2292793900CC00F3 /* UIView+Category.swift in Sources */,
+				EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */,
+				EF2A6ADE2292A00B00CC00F3 /* UILabel+Chain.swift in Sources */,
+				EF2A6ADA229260AD00CC00F3 /* UIView+Chain.swift in Sources */,
+				EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */,
+				EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6AAD2292547200CC00F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2A6AB62292547200CC00F3 /* DnpKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2A6AB82292547200CC00F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2A6AC12292547200CC00F3 /* DnpKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF2A6AB32292547200CC00F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2A6A9C2292547000CC00F3 /* DnpKit */;
+			targetProxy = EF2A6AB22292547200CC00F3 /* PBXContainerItemProxy */;
+		};
+		EF2A6ABE2292547200CC00F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2A6A9C2292547000CC00F3 /* DnpKit */;
+			targetProxy = EF2A6ABD2292547200CC00F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF2A6AA42292547000CC00F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2A6AA52292547000CC00F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF2A6AA92292547200CC00F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2A6AAA2292547200CC00F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF2A6AC32292547200CC00F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF2A6AC42292547200CC00F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF2A6AC62292547200CC00F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B842EE2428160B1408CD904D /* Pods-DnpKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				GCC_PREFIX_HEADER = DnpKit/DnpKit/PrefixHeader.pch;
+				INFOPLIST_FILE = DnpKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DnpKit/DnpKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF2A6AC72292547200CC00F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0503215E1C2C0EBE929C793F /* Pods-DnpKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				GCC_PREFIX_HEADER = DnpKit/DnpKit/PrefixHeader.pch;
+				INFOPLIST_FILE = DnpKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DnpKit/DnpKit-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF2A6AC92292547200CC00F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				INFOPLIST_FILE = DnpKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnpKit.app/DnpKit";
+			};
+			name = Debug;
+		};
+		EF2A6ACA2292547200CC00F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				INFOPLIST_FILE = DnpKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnpKit.app/DnpKit";
+			};
+			name = Release;
+		};
+		EF2A6ACC2292547200CC00F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				INFOPLIST_FILE = DnpKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DnpKit;
+			};
+			name = Debug;
+		};
+		EF2A6ACD2292547200CC00F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z4UMADRX8;
+				INFOPLIST_FILE = DnpKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomfice.DnpKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DnpKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF2A6A982292547000CC00F3 /* Build configuration list for PBXProject "DnpKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2A6AC32292547200CC00F3 /* Debug */,
+				EF2A6AC42292547200CC00F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2A6AC52292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2A6AC62292547200CC00F3 /* Debug */,
+				EF2A6AC72292547200CC00F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2A6AC82292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2A6AC92292547200CC00F3 /* Debug */,
+				EF2A6ACA2292547200CC00F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2A6ACB2292547200CC00F3 /* Build configuration list for PBXNativeTarget "DnpKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2A6ACC2292547200CC00F3 /* Debug */,
+				EF2A6ACD2292547200CC00F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF2A6A952292547000CC00F3 /* Project object */;
+}
