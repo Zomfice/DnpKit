@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   		ss.source_files = 'Source/CALayer/*.swift'
   end
 
-  subspec.subspec 'UIGesture' do |ss|
+  spec.subspec 'UIGesture' do |ss|
   		ss.source_files = 'Source/UIGesture/*.swift'
   end
 
