@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
 
@@ -26,23 +26,18 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'SnapKit'
 
-  spec.subspec 'Base' do |ss| 
-    ss.source_files = 'Source/Base/*.swift'
-  end
-
   spec.subspec 'UIView' do |ss|
 		ss.source_files = 'Source/UIView/*.swift'
-    ss.dependency = 'DnpKit/Base'
   end 
 
   spec.subspec 'CALayer' do |ss|
   		ss.source_files = 'Source/CALayer/*.swift'
-      ss.dependency = 'DnpKit/Base'
+      ss.dependency 'DnpKit/UIView'
   end
 
   spec.subspec 'UIGesture' do |ss|
   		ss.source_files = 'Source/UIGesture/*.swift'
-      ss.dependency = 'DnpKit/Base'
+      ss.dependency 'DnpKit/UIView'
   end
 
 end
