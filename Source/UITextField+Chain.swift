@@ -189,7 +189,9 @@ public extension DnpChain where ObjectType: UITextField {
     
     @discardableResult
     func textContentType(_ textContentType: UITextContentType) -> DnpChain {
-        self.chain.textContentType = textContentType
+        if #available(iOS 10.0, *) {
+            self.chain.textContentType = textContentType
+        }
         return self
     }
 }
