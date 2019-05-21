@@ -56,6 +56,11 @@ class ViewController: UIViewController {
             .textAlignment(.center)
             .keyboardType(.numberPad)
         
+        
+        
+NSMutableAttributedString().dnp.replaceCharacters(loc: 0, len: 1, "")
+            
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
