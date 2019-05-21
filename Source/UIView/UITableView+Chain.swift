@@ -6,7 +6,7 @@
 //  Copyright © 2019 Zomfice. All rights reserved.
 //
 
-public extension DnpChain where ObjectType: UITableView {
+public extension DnpChain where ObjectType: UITableView{
     
     @discardableResult
     func dataSource(_ dataSource: UITableViewDataSource?) -> DnpChain {

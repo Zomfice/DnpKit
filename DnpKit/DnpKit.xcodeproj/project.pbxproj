@@ -29,6 +29,9 @@
 		EF22B6682293EF4800411C20 /* UITableView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B6672293EF4800411C20 /* UITableView+Chain.swift */; };
 		EF22B66A2293F94900411C20 /* UICollectionView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B6692293F94900411C20 /* UICollectionView+Chain.swift */; };
 		EF22B66C2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B66B2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift */; };
+		EF22B66E229409A000411C20 /* UserDefaults+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */; };
+		EF22B6732294179100411C20 /* CALayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B6722294179100411C20 /* CALayer+Chain.swift */; };
+		EF22B675229417A900411C20 /* UIGestureChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B674229417A900411C20 /* UIGestureChain.swift */; };
 		EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA02292547000CC00F3 /* AppDelegate.swift */; };
 		EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA22292547000CC00F3 /* ViewController.swift */; };
 		EF2A6AA62292547000CC00F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA42292547000CC00F3 /* Main.storyboard */; };
@@ -88,6 +91,9 @@
 		EF22B6672293EF4800411C20 /* UITableView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Chain.swift"; sourceTree = "<group>"; };
 		EF22B6692293F94900411C20 /* UICollectionView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Chain.swift"; sourceTree = "<group>"; };
 		EF22B66B2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Chain.swift"; sourceTree = "<group>"; };
+		EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Chain.swift"; sourceTree = "<group>"; };
+		EF22B6722294179100411C20 /* CALayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Chain.swift"; sourceTree = "<group>"; };
+		EF22B674229417A900411C20 /* UIGestureChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureChain.swift; sourceTree = "<group>"; };
 		EF2A6A9D2292547000CC00F3 /* DnpKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2A6AA02292547000CC00F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2A6AA22292547000CC00F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +162,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF22B66F2294158000411C20 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6ADB2292793900CC00F3 /* UIView+Category.swift */,
+				EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */,
+				EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */,
+				EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */,
+				EF04DBC22293AC8200D026F0 /* UIBarButtonItem+Chain.swift */,
+				EF04DBC42293B28A00D026F0 /* UIBarItem+Chain.swift */,
+				EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */,
+				EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */,
+				EF04DBB42293905200D026F0 /* UITextField+Chain.swift */,
+				EF04DBB62293995100D026F0 /* UITextView+Chain.swift */,
+				EF04DBB82293A44000D026F0 /* UISwitch+Chain.swift */,
+				EF04DBBA2293A55900D026F0 /* UISlider+Chain.swift */,
+				EF04DBBC2293A8EA00D026F0 /* UIActivityIndicatorView+Chain.swift */,
+				EF04DBBE2293AA1200D026F0 /* UIProgressView+Chain.swift */,
+				EF04DBC02293AB7400D026F0 /* UIResponder+Chain.swift */,
+				EF04DBC62293B5C300D026F0 /* UIDatePicker+Chain.swift */,
+				EF04DBC82293C6B100D026F0 /* UIPickerView+Chain.swift */,
+				EF04DBCA2293CA7900D026F0 /* NotificationCenter+Chain.swift */,
+				EF22B6592293CF0900411C20 /* NSMutableAttributedString+Chain.swift */,
+				EF22B65D2293DA1E00411C20 /* UINavigationBar+Chain.swift */,
+				EF22B65F2293DB4A00411C20 /* UINavigationItem+Chain.swift */,
+				EF22B6612293E0B500411C20 /* UISegmentedControl+Chain.swift */,
+				EF22B6632293E4FF00411C20 /* UIStepper+Chain.swift */,
+				EF22B6652293E80900411C20 /* UIScrollView+Chain.swift */,
+				EF22B6672293EF4800411C20 /* UITableView+Chain.swift */,
+				EF22B6692293F94900411C20 /* UICollectionView+Chain.swift */,
+				EF22B66B2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift */,
+				EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		EF22B6702294174800411C20 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				EF22B6722294179100411C20 /* CALayer+Chain.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		EF22B6712294175700411C20 /* UIGesture */ = {
+			isa = PBXGroup;
+			children = (
+				EF22B674229417A900411C20 /* UIGestureChain.swift */,
+			);
+			path = UIGesture;
+			sourceTree = "<group>";
+		};
 		EF2A6A942292547000CC00F3 = {
 			isa = PBXGroup;
 			children = (
@@ -217,33 +274,9 @@
 			children = (
 				EF2A6AD022925A5800CC00F3 /* DnpChain.swift */,
 				EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */,
-				EF2A6ADB2292793900CC00F3 /* UIView+Category.swift */,
-				EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */,
-				EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */,
-				EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */,
-				EF04DBC22293AC8200D026F0 /* UIBarButtonItem+Chain.swift */,
-				EF04DBC42293B28A00D026F0 /* UIBarItem+Chain.swift */,
-				EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */,
-				EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */,
-				EF04DBB42293905200D026F0 /* UITextField+Chain.swift */,
-				EF04DBB62293995100D026F0 /* UITextView+Chain.swift */,
-				EF04DBB82293A44000D026F0 /* UISwitch+Chain.swift */,
-				EF04DBBA2293A55900D026F0 /* UISlider+Chain.swift */,
-				EF04DBBC2293A8EA00D026F0 /* UIActivityIndicatorView+Chain.swift */,
-				EF04DBBE2293AA1200D026F0 /* UIProgressView+Chain.swift */,
-				EF04DBC02293AB7400D026F0 /* UIResponder+Chain.swift */,
-				EF04DBC62293B5C300D026F0 /* UIDatePicker+Chain.swift */,
-				EF04DBC82293C6B100D026F0 /* UIPickerView+Chain.swift */,
-				EF04DBCA2293CA7900D026F0 /* NotificationCenter+Chain.swift */,
-				EF22B6592293CF0900411C20 /* NSMutableAttributedString+Chain.swift */,
-				EF22B65D2293DA1E00411C20 /* UINavigationBar+Chain.swift */,
-				EF22B65F2293DB4A00411C20 /* UINavigationItem+Chain.swift */,
-				EF22B6612293E0B500411C20 /* UISegmentedControl+Chain.swift */,
-				EF22B6632293E4FF00411C20 /* UIStepper+Chain.swift */,
-				EF22B6652293E80900411C20 /* UIScrollView+Chain.swift */,
-				EF22B6672293EF4800411C20 /* UITableView+Chain.swift */,
-				EF22B6692293F94900411C20 /* UICollectionView+Chain.swift */,
-				EF22B66B2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift */,
+				EF22B66F2294158000411C20 /* UIView */,
+				EF22B6702294174800411C20 /* CALayer */,
+				EF22B6712294175700411C20 /* UIGesture */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -441,6 +474,7 @@
 				EF04DBB72293995100D026F0 /* UITextView+Chain.swift in Sources */,
 				EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */,
 				EF2A6ADC2292793900CC00F3 /* UIView+Category.swift in Sources */,
+				EF22B6732294179100411C20 /* CALayer+Chain.swift in Sources */,
 				EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */,
 				EF22B6682293EF4800411C20 /* UITableView+Chain.swift in Sources */,
 				EF22B6642293E4FF00411C20 /* UIStepper+Chain.swift in Sources */,
@@ -454,6 +488,7 @@
 				EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */,
 				EF04DBC52293B28A00D026F0 /* UIBarItem+Chain.swift in Sources */,
 				EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */,
+				EF22B66E229409A000411C20 /* UserDefaults+Chain.swift in Sources */,
 				EF04DBCB2293CA7900D026F0 /* NotificationCenter+Chain.swift in Sources */,
 				EF22B6602293DB4A00411C20 /* UINavigationItem+Chain.swift in Sources */,
 				EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */,
@@ -461,6 +496,7 @@
 				EF22B66C2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift in Sources */,
 				EF04DBB52293905200D026F0 /* UITextField+Chain.swift in Sources */,
 				EF04DBC12293AB7500D026F0 /* UIResponder+Chain.swift in Sources */,
+				EF22B675229417A900411C20 /* UIGestureChain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
