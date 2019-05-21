@@ -213,6 +213,15 @@
 			path = UIGesture;
 			sourceTree = "<group>";
 		};
+		EF22B67622942ED600411C20 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF2A6AD022925A5800CC00F3 /* DnpChain.swift */,
+				EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		EF2A6A942292547000CC00F3 = {
 			isa = PBXGroup;
 			children = (
@@ -272,8 +281,7 @@
 		EF2A6ACF229258BC00CC00F3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EF2A6AD022925A5800CC00F3 /* DnpChain.swift */,
-				EF2A6AD222925C0000CC00F3 /* DnpChainCompatible.swift */,
+				EF22B67622942ED600411C20 /* Base */,
 				EF22B66F2294158000411C20 /* UIView */,
 				EF22B6702294174800411C20 /* CALayer */,
 				EF22B6712294175700411C20 /* UIGesture */,
