@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B66E60AC593C7BDD974B8675 /* Pods_DnpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720C1272169457F8FC6BB39 /* Pods_DnpKit.framework */; };
+		EF04DBB52293905200D026F0 /* UITextField+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBB42293905200D026F0 /* UITextField+Chain.swift */; };
+		EF04DBB72293995100D026F0 /* UITextView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBB62293995100D026F0 /* UITextView+Chain.swift */; };
 		EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA02292547000CC00F3 /* AppDelegate.swift */; };
 		EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA22292547000CC00F3 /* ViewController.swift */; };
 		EF2A6AA62292547000CC00F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA42292547000CC00F3 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		0503215E1C2C0EBE929C793F /* Pods-DnpKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnpKit.release.xcconfig"; path = "Target Support Files/Pods-DnpKit/Pods-DnpKit.release.xcconfig"; sourceTree = "<group>"; };
 		9720C1272169457F8FC6BB39 /* Pods_DnpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DnpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B842EE2428160B1408CD904D /* Pods-DnpKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnpKit.debug.xcconfig"; path = "Target Support Files/Pods-DnpKit/Pods-DnpKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EF04DBB42293905200D026F0 /* UITextField+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Chain.swift"; sourceTree = "<group>"; };
+		EF04DBB62293995100D026F0 /* UITextView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6A9D2292547000CC00F3 /* DnpKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2A6AA02292547000CC00F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2A6AA22292547000CC00F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,8 +183,10 @@
 				EF2A6AD9229260AD00CC00F3 /* UIView+Chain.swift */,
 				EF2A6ADD2292A00B00CC00F3 /* UILabel+Chain.swift */,
 				EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */,
-				EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */,
 				EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */,
+				EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */,
+				EF04DBB42293905200D026F0 /* UITextField+Chain.swift */,
+				EF04DBB62293995100D026F0 /* UITextView+Chain.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -368,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2A6AD322925C0000CC00F3 /* DnpChainCompatible.swift in Sources */,
+				EF04DBB72293995100D026F0 /* UITextView+Chain.swift in Sources */,
 				EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */,
 				EF2A6ADC2292793900CC00F3 /* UIView+Category.swift in Sources */,
 				EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */,
@@ -377,6 +384,7 @@
 				EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */,
 				EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */,
 				EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */,
+				EF04DBB52293905200D026F0 /* UITextField+Chain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

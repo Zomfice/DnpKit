@@ -44,7 +44,18 @@ class ViewController: UIViewController {
                 make.top.equalTo(300)
             }.view
         
-        self.view.addSubview(lalbel)
+        UITextField().dnp
+            .text("hello")
+            .leftViewMode(.always)
+            .defaultTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)])
+        
+        UITextView().dnp.selectedRange(0, 10)
+            .returnKeyType(UIReturnKeyType.go)
+            .font(12)
+            .text("hello")
+            .textAlignment(.center)
+            .keyboardType(.numberPad)
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
