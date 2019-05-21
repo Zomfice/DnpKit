@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.7"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 
 
   spec.subspec 'UIView' do |ss|
-		ss.source_files = 'Source/UI/*.swift'
+		ss.source_files = 'Source/UIView/*.swift'
   end 
 
   spec.subspec 'CALayer' do |ss|

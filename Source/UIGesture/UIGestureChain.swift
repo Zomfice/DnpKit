@@ -65,7 +65,7 @@ public extension DnpChain where ObjectType: UIGestureRecognizer {
     }
     
     @discardableResult
-    @available(iOS 9.0, *)
+    @available(iOS 9.2, *)
     func requiresExclusiveTouchType(_ requiresExclusiveTouchType: Bool) -> DnpChain {
         self.chain.requiresExclusiveTouchType = requiresExclusiveTouchType
         return self
