@@ -14,6 +14,14 @@ public extension DnpChain where ObjectType: UIImageView {
     }
     
     @discardableResult
+    func image(_ imageName: String?) -> DnpChain {
+        if let imagename = imageName {
+            self.chain.image = UIImage(named: imagename)
+        }
+        return self
+    }
+    
+    @discardableResult
     func highlightedImage(_ highlightedImage: UIImage?) -> DnpChain {
         self.chain.highlightedImage = highlightedImage
         return self

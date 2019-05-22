@@ -69,8 +69,16 @@ public extension DnpChain where ObjectType: UIButton {
     }
     
     @discardableResult
-    func image(_ image: UIImage,_ state: UIControl.State) -> DnpChain {
+    func image(_ image: UIImage?,_ state: UIControl.State) -> DnpChain {
         self.chain.setImage(image, for: state)
+        return self
+    }
+    
+    @discardableResult
+    func image(_ image: String?,_ state: UIControl.State) -> DnpChain {
+        if let m_image = image{
+            self.chain.setImage(UIImage(named: m_image), for: state)
+        }
         return self
     }
     
@@ -87,8 +95,16 @@ public extension DnpChain where ObjectType: UIButton {
     }
     
     @discardableResult
-    func backgroundImage(_ backgroundImage: UIImage,_ state: UIControl.State) -> DnpChain {
+    func backgroundImage(_ backgroundImage: UIImage?,_ state: UIControl.State) -> DnpChain {
         self.chain.setBackgroundImage(backgroundImage, for: state)
+        return self
+    }
+    
+    @discardableResult
+    func backgroundImage(_ backgroundImage: String?,_ state: UIControl.State) -> DnpChain {
+        if let m_backgroundImage = backgroundImage{
+            self.chain.setBackgroundImage(UIImage(named: m_backgroundImage), for: state)
+        }
         return self
     }
     
