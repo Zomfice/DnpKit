@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var mview: UIView!
+    //var mview: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       mview = UIView().dnp
+       /*mview = UIView().dnp
             //.frame(100, 100, 100, 100)
             .backgroundColor(UIColor.red)
             .addToSuperView(self.view)
@@ -59,16 +59,17 @@ class ViewController: UIViewController {
         
         
 NSMutableAttributedString().dnp.replaceCharacters(loc: 0, len: 1, "")
-            
+        
+        */
         
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        mview.dnp.remakeSnapKit { (make) in
-            make.width.height.equalTo(200)
-            make.left.top.equalTo(100)
-        }
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        mview.dnp.remakeSnapKit { (make) in
+//            make.width.height.equalTo(200)
+//            make.left.top.equalTo(100)
+//        }
+//    }
 
 }
 

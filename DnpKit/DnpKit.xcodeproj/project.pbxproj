@@ -32,6 +32,19 @@
 		EF22B66E229409A000411C20 /* UserDefaults+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */; };
 		EF22B6732294179100411C20 /* CALayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B6722294179100411C20 /* CALayer+Chain.swift */; };
 		EF22B675229417A900411C20 /* UIGestureChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22B674229417A900411C20 /* UIGestureChain.swift */; };
+		EF236061229447410020B00D /* CAGradientLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF236060229447410020B00D /* CAGradientLayer+Chain.swift */; };
+		EF2360632294499E0020B00D /* CAScrollLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2360622294499E0020B00D /* CAScrollLayer+Chain.swift */; };
+		EF23606522944AE20020B00D /* CATiledLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606422944AE20020B00D /* CATiledLayer+Chain.swift */; };
+		EF23606722944BDD0020B00D /* CAShapeLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606622944BDD0020B00D /* CAShapeLayer+Chain.swift */; };
+		EF23606922944D780020B00D /* CATextLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606822944D780020B00D /* CATextLayer+Chain.swift */; };
+		EF23606B22944E5B0020B00D /* CAReplicatorLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606A22944E5B0020B00D /* CAReplicatorLayer+Chain.swift */; };
+		EF23606D22944F4B0020B00D /* CAEmitterLayer+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606C22944F4B0020B00D /* CAEmitterLayer+Chain.swift */; };
+		EF23606F229450AB0020B00D /* UITapGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23606E229450AB0020B00D /* UITapGesture+Chain.swift */; };
+		EF236071229451040020B00D /* UIRotationGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF236070229451040020B00D /* UIRotationGesture+Chain.swift */; };
+		EF236073229451A10020B00D /* UISwipeGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF236072229451A10020B00D /* UISwipeGesture+Chain.swift */; };
+		EF2360752294520D0020B00D /* UIPanGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2360742294520D0020B00D /* UIPanGesture+Chain.swift */; };
+		EF236077229452BA0020B00D /* UILongPressGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF236076229452BA0020B00D /* UILongPressGesture+Chain.swift */; };
+		EF236079229453460020B00D /* UIPinchGesture+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF236078229453460020B00D /* UIPinchGesture+Chain.swift */; };
 		EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA02292547000CC00F3 /* AppDelegate.swift */; };
 		EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AA22292547000CC00F3 /* ViewController.swift */; };
 		EF2A6AA62292547000CC00F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2A6AA42292547000CC00F3 /* Main.storyboard */; };
@@ -47,6 +60,7 @@
 		EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */; };
 		EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */; };
 		EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */; };
+		EF6B429B2294DF1900CB55B2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +108,19 @@
 		EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Chain.swift"; sourceTree = "<group>"; };
 		EF22B6722294179100411C20 /* CALayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Chain.swift"; sourceTree = "<group>"; };
 		EF22B674229417A900411C20 /* UIGestureChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureChain.swift; sourceTree = "<group>"; };
+		EF236060229447410020B00D /* CAGradientLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF2360622294499E0020B00D /* CAScrollLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAScrollLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606422944AE20020B00D /* CATiledLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATiledLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606622944BDD0020B00D /* CAShapeLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606822944D780020B00D /* CATextLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATextLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606A22944E5B0020B00D /* CAReplicatorLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAReplicatorLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606C22944F4B0020B00D /* CAEmitterLayer+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAEmitterLayer+Chain.swift"; sourceTree = "<group>"; };
+		EF23606E229450AB0020B00D /* UITapGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGesture+Chain.swift"; sourceTree = "<group>"; };
+		EF236070229451040020B00D /* UIRotationGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRotationGesture+Chain.swift"; sourceTree = "<group>"; };
+		EF236072229451A10020B00D /* UISwipeGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwipeGesture+Chain.swift"; sourceTree = "<group>"; };
+		EF2360742294520D0020B00D /* UIPanGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPanGesture+Chain.swift"; sourceTree = "<group>"; };
+		EF236076229452BA0020B00D /* UILongPressGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILongPressGesture+Chain.swift"; sourceTree = "<group>"; };
+		EF236078229453460020B00D /* UIPinchGesture+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPinchGesture+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6A9D2292547000CC00F3 /* DnpKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2A6AA02292547000CC00F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2A6AA22292547000CC00F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +144,7 @@
 		EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Chain.swift"; sourceTree = "<group>"; };
+		EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +231,13 @@
 			isa = PBXGroup;
 			children = (
 				EF22B6722294179100411C20 /* CALayer+Chain.swift */,
+				EF236060229447410020B00D /* CAGradientLayer+Chain.swift */,
+				EF2360622294499E0020B00D /* CAScrollLayer+Chain.swift */,
+				EF23606422944AE20020B00D /* CATiledLayer+Chain.swift */,
+				EF23606622944BDD0020B00D /* CAShapeLayer+Chain.swift */,
+				EF23606822944D780020B00D /* CATextLayer+Chain.swift */,
+				EF23606A22944E5B0020B00D /* CAReplicatorLayer+Chain.swift */,
+				EF23606C22944F4B0020B00D /* CAEmitterLayer+Chain.swift */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -211,6 +246,12 @@
 			isa = PBXGroup;
 			children = (
 				EF22B674229417A900411C20 /* UIGestureChain.swift */,
+				EF23606E229450AB0020B00D /* UITapGesture+Chain.swift */,
+				EF236070229451040020B00D /* UIRotationGesture+Chain.swift */,
+				EF236072229451A10020B00D /* UISwipeGesture+Chain.swift */,
+				EF2360742294520D0020B00D /* UIPanGesture+Chain.swift */,
+				EF236076229452BA0020B00D /* UILongPressGesture+Chain.swift */,
+				EF236078229453460020B00D /* UIPinchGesture+Chain.swift */,
 			);
 			path = UIGesture;
 			sourceTree = "<group>";
@@ -243,6 +284,7 @@
 				EF2A6ACF229258BC00CC00F3 /* Source */,
 				EF2A6AA02292547000CC00F3 /* AppDelegate.swift */,
 				EF2A6AA22292547000CC00F3 /* ViewController.swift */,
+				EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */,
 				EF2A6AD422925EF000CC00F3 /* PrefixHeader.pch */,
 				EF2A6AA42292547000CC00F3 /* Main.storyboard */,
 				EF2A6AA72292547200CC00F3 /* Assets.xcassets */,
@@ -470,6 +512,7 @@
 				EF04DBBF2293AA1200D026F0 /* UIProgressView+Chain.swift in Sources */,
 				EF22B6662293E80900411C20 /* UIScrollView+Chain.swift in Sources */,
 				EF22B66A2293F94900411C20 /* UICollectionView+Chain.swift in Sources */,
+				EF23606F229450AB0020B00D /* UITapGesture+Chain.swift in Sources */,
 				EF2A6AD322925C0000CC00F3 /* DnpChainCompatible.swift in Sources */,
 				EF04DBB72293995100D026F0 /* UITextView+Chain.swift in Sources */,
 				EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */,
@@ -477,13 +520,20 @@
 				EF22B6732294179100411C20 /* CALayer+Chain.swift in Sources */,
 				EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */,
 				EF22B6682293EF4800411C20 /* UITableView+Chain.swift in Sources */,
+				EF2360632294499E0020B00D /* CAScrollLayer+Chain.swift in Sources */,
 				EF22B6642293E4FF00411C20 /* UIStepper+Chain.swift in Sources */,
 				EF2A6ADE2292A00B00CC00F3 /* UILabel+Chain.swift in Sources */,
+				EF23606D22944F4B0020B00D /* CAEmitterLayer+Chain.swift in Sources */,
+				EF23606722944BDD0020B00D /* CAShapeLayer+Chain.swift in Sources */,
 				EF04DBB92293A44000D026F0 /* UISwitch+Chain.swift in Sources */,
+				EF236077229452BA0020B00D /* UILongPressGesture+Chain.swift in Sources */,
 				EF22B65A2293CF0900411C20 /* NSMutableAttributedString+Chain.swift in Sources */,
 				EF2A6ADA229260AD00CC00F3 /* UIView+Chain.swift in Sources */,
+				EF236079229453460020B00D /* UIPinchGesture+Chain.swift in Sources */,
 				EF04DBC72293B5C300D026F0 /* UIDatePicker+Chain.swift in Sources */,
+				EF23606922944D780020B00D /* CATextLayer+Chain.swift in Sources */,
 				EF2A6AA12292547000CC00F3 /* AppDelegate.swift in Sources */,
+				EF236061229447410020B00D /* CAGradientLayer+Chain.swift in Sources */,
 				EF22B65E2293DA1E00411C20 /* UINavigationBar+Chain.swift in Sources */,
 				EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */,
 				EF04DBC52293B28A00D026F0 /* UIBarItem+Chain.swift in Sources */,
@@ -493,10 +543,16 @@
 				EF22B6602293DB4A00411C20 /* UINavigationItem+Chain.swift in Sources */,
 				EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */,
 				EF04DBBD2293A8EA00D026F0 /* UIActivityIndicatorView+Chain.swift in Sources */,
+				EF236073229451A10020B00D /* UISwipeGesture+Chain.swift in Sources */,
 				EF22B66C2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift in Sources */,
 				EF04DBB52293905200D026F0 /* UITextField+Chain.swift in Sources */,
+				EF23606B22944E5B0020B00D /* CAReplicatorLayer+Chain.swift in Sources */,
+				EF6B429B2294DF1900CB55B2 /* SearchViewController.swift in Sources */,
 				EF04DBC12293AB7500D026F0 /* UIResponder+Chain.swift in Sources */,
 				EF22B675229417A900411C20 /* UIGestureChain.swift in Sources */,
+				EF23606522944AE20020B00D /* CATiledLayer+Chain.swift in Sources */,
+				EF236071229451040020B00D /* UIRotationGesture+Chain.swift in Sources */,
+				EF2360752294520D0020B00D /* UIPanGesture+Chain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
