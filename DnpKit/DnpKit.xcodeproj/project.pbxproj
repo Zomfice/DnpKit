@@ -64,6 +64,7 @@
 		EF6B429F2294EED400CB55B2 /* UITableViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B429E2294EED400CB55B2 /* UITableViewCell+Chain.swift */; };
 		EF6B42A12294F3C000CB55B2 /* UICollectionViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */; };
 		EF6B42A3229506D600CB55B2 /* UIStackView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */; };
+		EF6B42A722951E6C00CB55B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		EF6B429E2294EED400CB55B2 /* UITableViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Chain.swift"; sourceTree = "<group>"; };
+		EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +295,7 @@
 				EF2A6ACF229258BC00CC00F3 /* Source */,
 				EF2A6AA02292547000CC00F3 /* AppDelegate.swift */,
 				EF2A6AA22292547000CC00F3 /* ViewController.swift */,
+				EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */,
 				EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */,
 				EF2A6AD422925EF000CC00F3 /* PrefixHeader.pch */,
 				EF2A6AA42292547000CC00F3 /* Main.storyboard */,
@@ -527,6 +530,7 @@
 				EF2A6AD122925A5800CC00F3 /* DnpChain.swift in Sources */,
 				EF2A6ADC2292793900CC00F3 /* UIView+Category.swift in Sources */,
 				EF22B6732294179100411C20 /* CALayer+Chain.swift in Sources */,
+				EF6B42A722951E6C00CB55B2 /* TableViewCell.swift in Sources */,
 				EF2A6AA32292547000CC00F3 /* ViewController.swift in Sources */,
 				EF22B6682293EF4800411C20 /* UITableView+Chain.swift in Sources */,
 				EF2360632294499E0020B00D /* CAScrollLayer+Chain.swift in Sources */,

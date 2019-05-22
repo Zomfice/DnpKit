@@ -105,6 +105,7 @@ class ViewController: UIViewController{
         let tableView = UITableView(frame: .zero, style: .plain).dnp
             .dataSource(self)
             .delegate(self)
+            //.contentInsetAdjustmentBehavior(.never)
             .adJustedContentIOS11()
             .estimatedRowHeight(70)
             .estimatedSectionFooterHeight(0)

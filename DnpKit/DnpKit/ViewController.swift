@@ -10,66 +10,49 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //var mview: UIView!
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .plain).dnp
+            .dataSource(self)
+            .delegate(self)
+            //.contentInsetAdjustmentBehavior(.never)
+            //.adJustedContentIOS11()
+            .estimatedRowHeight(70)
+            .estimatedSectionFooterHeight(0)
+            .estimatedSectionHeaderHeight(0)
+            .showsVerticalScrollIndicator(true)
+            .separatorStyle(.singleLine)
+            .backgroundColor(UIColor.cyan)
+            .backgroundView(UIView())
+            .addToSuperView(self.view)
+            .register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+            .register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+            .view
+        return tableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       /*mview = UIView().dnp
-            //.frame(100, 100, 100, 100)
-            .backgroundColor(UIColor.red)
-            .addToSuperView(self.view)
-            .tag(100)
-            .cornerRadius(50)
-            .makeSnapKit { (make) in
-                make.width.height.equalTo(100)
-                make.left.top.equalTo(100)
-            }.view
         
-        mview.dnp.assignTo { (view) in
-            view.backgroundColor = UIColor.cyan
+        UIButton().dnp.addTarget(self, #selector(method), .touchUpInside)
+        
+        self.tableView.dnp.makeSnapKit { (make) in
+            make.top.equalTo(0)
+            make.left.right.bottom.equalTo(0)
         }
-            
-        
-        let lalbel =  UILabel().dnp
-            .text("122333")
-            .font(12)
-            .textAlignment(.center)
-            .textColor(UIColor.cyan)
-            .backgroundColor(UIColor.magenta)
-            .lineBreakMode(.byCharWrapping)
-            .addToSuperView(self.view)
-            .makeSnapKit { (make) in
-                make.left.equalToSuperview()
-                make.top.equalTo(300)
-            }.view
-        
-        UITextField().dnp
-            .text("hello")
-            .leftViewMode(.always)
-            .defaultTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)])
-        
-        UITextView().dnp.selectedRange(0, 10)
-            .returnKeyType(UIReturnKeyType.go)
-            .font(12)
-            .text("hello")
-            .textAlignment(.center)
-            .keyboardType(.numberPad)
-        
-        
-        
-NSMutableAttributedString().dnp.replaceCharacters(loc: 0, len: 1, "")
-        
-        */
         
     }
 
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        mview.dnp.remakeSnapKit { (make) in
-//            make.width.height.equalTo(200)
-//            make.left.top.equalTo(100)
-//        }
-//    }
-
 }
 
+extension ViewController: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        cell.selectionStyle = .none
+        return cell
+    }
+}
