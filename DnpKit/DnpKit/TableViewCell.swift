@@ -10,7 +10,6 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    //懒加载创建
     lazy var goodIMG: UIImageView = {
         let goodIMG =  UIImageView().dnp
             .cornerRadius(5)
@@ -30,7 +29,7 @@ class TableViewCell: UITableViewCell {
             make.bottom.equalTo(-15)
             make.width.height.equalTo(100)
         }
-        //普通创建
+        
         UILabel().dnp
             .text("哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒")
             .textColor(UIColor.magenta)

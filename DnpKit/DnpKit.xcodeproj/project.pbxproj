@@ -198,7 +198,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF22B66F2294158000411C20 /* UIView */ = {
+		EF22B66F2294158000411C20 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EF2A6AD022925A5800CC00F3 /* DnpChain.swift */,
@@ -235,10 +235,10 @@
 				EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */,
 				EF22B66D229409A000411C20 /* UserDefaults+Chain.swift */,
 			);
-			path = UIView;
+			path = View;
 			sourceTree = "<group>";
 		};
-		EF22B6702294174800411C20 /* CALayer */ = {
+		EF22B6702294174800411C20 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
 				EF22B6722294179100411C20 /* CALayer+Chain.swift */,
@@ -250,10 +250,10 @@
 				EF23606A22944E5B0020B00D /* CAReplicatorLayer+Chain.swift */,
 				EF23606C22944F4B0020B00D /* CAEmitterLayer+Chain.swift */,
 			);
-			path = CALayer;
+			path = Layer;
 			sourceTree = "<group>";
 		};
-		EF22B6712294175700411C20 /* UIGesture */ = {
+		EF22B6712294175700411C20 /* Event */ = {
 			isa = PBXGroup;
 			children = (
 				EF22B674229417A900411C20 /* UIGestureChain.swift */,
@@ -264,7 +264,7 @@
 				EF236076229452BA0020B00D /* UILongPressGesture+Chain.swift */,
 				EF236078229453460020B00D /* UIPinchGesture+Chain.swift */,
 			);
-			path = UIGesture;
+			path = Event;
 			sourceTree = "<group>";
 		};
 		EF2A6A942292547000CC00F3 = {
@@ -328,9 +328,9 @@
 		EF2A6ACF229258BC00CC00F3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EF22B66F2294158000411C20 /* UIView */,
-				EF22B6702294174800411C20 /* CALayer */,
-				EF22B6712294175700411C20 /* UIGesture */,
+				EF22B66F2294158000411C20 /* View */,
+				EF22B6702294174800411C20 /* Layer */,
+				EF22B6712294175700411C20 /* Event */,
 			);
 			name = Source;
 			path = ../../Source;

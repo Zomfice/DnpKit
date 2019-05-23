@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             .estimatedSectionHeaderHeight(0)
             .showsVerticalScrollIndicator(true)
             .separatorStyle(.singleLine)
-            .backgroundColor(UIColor.cyan)
+            .backgroundColor(UIColor.white)
             .backgroundView(UIView())
             .addToSuperView(self.view)
             .register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
@@ -34,7 +34,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        UIButton().dnp.addTarget(self, #selector(method), .touchUpInside)
+        UIView().dnp
+            .backgroundColor(UIColor.red)
+            .cornerRadius(5)
+            .makeSnapKit { (make) in
+                
+            }
+        
+        
         
         self.tableView.dnp.makeSnapKit { (make) in
             make.top.equalTo(0)
