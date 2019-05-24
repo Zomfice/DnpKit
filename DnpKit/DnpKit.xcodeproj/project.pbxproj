@@ -61,6 +61,7 @@
 		EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */; };
 		EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */; };
 		EF58ABBA22978D9600E60BA5 /* UIViewController+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58ABB922978D9600E60BA5 /* UIViewController+Chain.swift */; };
+		EF58ABBC2297C03000E60BA5 /* UITabBar+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58ABBB2297C03000E60BA5 /* UITabBar+Chain.swift */; };
 		EF6B429B2294DF1900CB55B2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */; };
 		EF6B429F2294EED400CB55B2 /* UITableViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B429E2294EED400CB55B2 /* UITableViewCell+Chain.swift */; };
 		EF6B42A12294F3C000CB55B2 /* UICollectionViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */; };
@@ -150,6 +151,7 @@
 		EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Chain.swift"; sourceTree = "<group>"; };
 		EF58ABB922978D9600E60BA5 /* UIViewController+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Chain.swift"; sourceTree = "<group>"; };
+		EF58ABBB2297C03000E60BA5 /* UITabBar+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Chain.swift"; sourceTree = "<group>"; };
 		EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EF6B429E2294EED400CB55B2 /* UITableViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Chain.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */,
 				EF04DBC22293AC8200D026F0 /* UIBarButtonItem+Chain.swift */,
 				EF04DBC42293B28A00D026F0 /* UIBarItem+Chain.swift */,
+				EF58ABBB2297C03000E60BA5 /* UITabBar+Chain.swift */,
 				EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */,
 				EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */,
 				EF04DBB42293905200D026F0 /* UITextField+Chain.swift */,
@@ -521,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF22B6622293E0B500411C20 /* UISegmentedControl+Chain.swift in Sources */,
+				EF58ABBC2297C03000E60BA5 /* UITabBar+Chain.swift in Sources */,
 				EF04DBC32293AC8200D026F0 /* UIBarButtonItem+Chain.swift in Sources */,
 				EF04DBBB2293A55900D026F0 /* UISlider+Chain.swift in Sources */,
 				EF04DBC92293C6B100D026F0 /* UIPickerView+Chain.swift in Sources */,

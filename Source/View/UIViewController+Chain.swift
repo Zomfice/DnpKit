@@ -15,6 +15,23 @@ public extension DnpChain where ObjectType: UIViewController {
     }
     
     @discardableResult
+    func backgroundColor(_ backgroundColor: UIColor?) -> DnpChain {
+        self.chain.view.backgroundColor = backgroundColor
+        return self
+    }
+    
+    @discardableResult
+    func tabBarItem(_ tabBarItem: UITabBarItem!) -> DnpChain {
+        self.chain.tabBarItem = tabBarItem
+        return self
+    }
+    
+    @discardableResult
+    func tabBarController() -> UITabBarController? {
+        return self.chain.tabBarController
+    }
+    
+    @discardableResult
     func loadView() -> DnpChain {
         self.chain.loadView()
         return self
