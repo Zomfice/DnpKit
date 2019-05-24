@@ -125,7 +125,7 @@ public extension DnpChain where ObjectType: NSMutableAttributedString {
     }
     
     @discardableResult
-    func systemFont(ofSize fontSize: CGFloat, range: NSRange? = nil) -> DnpChain {
+    func font(ofSize fontSize: CGFloat, range: NSRange? = nil) -> DnpChain {
         guard let range = range else {
             self.chain.addAttribute(.font, value: UIFont.systemFont(ofSize: fontSize), range: NSMakeRange(0, self.chain.length))
             return self
@@ -135,7 +135,7 @@ public extension DnpChain where ObjectType: NSMutableAttributedString {
     }
     
     @discardableResult
-    func boldSystemFont(ofSize fontSize: CGFloat, range: NSRange? = nil) -> DnpChain {
+    func boldFont(ofSize fontSize: CGFloat, range: NSRange? = nil) -> DnpChain {
         guard let range = range else {
             self.chain.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: fontSize), range: NSMakeRange(0, self.chain.length))
             return self

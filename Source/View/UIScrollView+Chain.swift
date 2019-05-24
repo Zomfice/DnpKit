@@ -227,7 +227,7 @@ public extension DnpChain where ObjectType: UIScrollView {
         return self
     }
     
-    /// IOS11
+    /// iOS11 Adjust: Attention View's automaticallyAdjustsScrollViewInsets = false
     @discardableResult
     func adJustedContentIOS11() -> DnpChain {
         if #available(iOS 11.0, *) {
