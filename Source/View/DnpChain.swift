@@ -11,7 +11,7 @@
 public struct DnpChain<ObjectType>{
     public let chain : ObjectType
     
-    public var view : ObjectType{
+    public var object : ObjectType{
         return chain
     }
     

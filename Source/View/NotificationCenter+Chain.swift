@@ -43,14 +43,3 @@ public extension DnpChain where ObjectType: NotificationCenter {
     }
     
 }
-/*
- static public func addAttributeStringForegroundColor(prefixString: String,contentString: String,prefixColor: UIColor,contentColor: UIColor) -> NSMutableAttributedString {
- let commonString = prefixString + contentString
- let prefixRange = NSString.init(string: commonString).range(of: prefixString)
- let contentRange = NSString.init(string: commonString).range(of: contentString)
- let attributedString = NSMutableAttributedString(string: commonString)
- attributedString.addAttributes([NSAttributedString.Key.foregroundColor : prefixColor], range: prefixRange)
- attributedString.addAttributes([NSAttributedString.Key.foregroundColor : contentColor], range: contentRange)
- return attributedString
- }
- */

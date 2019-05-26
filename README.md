@@ -32,7 +32,7 @@ $ pod install
 ## Contents
 
 * `UILabel().dnp` 创建对象调用dnp,通过`dnp`调用系统属性,函数,实现链式编程
-* `let label = UILabel().dnp.view` 在链式的最后通过`.view`获取创建的对象,可再通过`label`调用系统的属性,函数,也可以再次`label.dnp`进行链式
+* `let label = UILabel().dnp.object` 在链式的最后通过`.object`获取创建的对象,可再通过`label`调用系统的属性,函数,也可以再次`label.dnp`进行链式
 * `assignTo`以闭包的传递当前对象
 * 调用`Frame` `CGPoint` `CGSize` `CGRect`等函数可省略实参标签,例:`self.view.dnp.frame(10, 10, 10, 10)`
 * `self.view.dnp.addSubView` 添加子视图到当前对象
@@ -65,7 +65,7 @@ class ViewController: UIViewController{
             .makeSnapKit { (make) in
                 make.left.top.equalToSuperview()
             }
-            .view
+            .object
             
        }
 
@@ -89,7 +89,7 @@ class ViewController: UIViewController{
                 make.top.left.equalToSuperview()
             })
             .addTarget(self, #selector(buttonClick(sender:)), .touchUpInside)
-            .view
+            .object
 
     }
 }
@@ -116,7 +116,7 @@ class ViewController: UIViewController{
             .backgroundView(UIView())
             .addToSuperView(self.view)
             .register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
-            .view
+            .object
         return tableView
     }()
     

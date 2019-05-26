@@ -16,10 +16,11 @@ class TableViewCell: UITableViewCell {
             .image(UIImage(named: "image"))
             .isUserInteractionEnabled(true)
             .addToSuperView(self.contentView)
-            .view
+            .object
         return goodIMG
     }()
     
+    var titleLb: UILabel!
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,9 +31,9 @@ class TableViewCell: UITableViewCell {
             make.width.height.equalTo(100)
         }
         
-        UILabel().dnp
-            .text("哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒")
-            .textColor(UIColor.magenta)
+        titleLb = UILabel().dnp
+            .text("This is a label string conent ! ,Just to show the example usage of UI chain")
+            .textColor(UIColor.gray)
             .font(15)
             .numberOfLines(2)
             .textAlignment(.left)
@@ -42,10 +43,11 @@ class TableViewCell: UITableViewCell {
                 make.top.equalTo(self.goodIMG.snp.top)
                 make.right.equalToSuperview().offset(-15)
             }
+            .object
         
         UILabel().dnp
             .text("2019-05-22 10:00:00")
-            .textColor(UIColor.magenta)
+            .textColor(UIColor.gray)
             .font(12)
             .numberOfLines(1)
             .textAlignment(.left)
@@ -59,7 +61,7 @@ class TableViewCell: UITableViewCell {
             .title("详情", .normal)
             .tintColor(UIColor.green)
             .titleFont(14)
-            .backgroundColor(UIColor.cyan)
+            .backgroundColor(UIColor.gray)
             .cornerRadius(10)
             .addToSuperView(self.contentView)
             .makeSnapKit { (make) in
@@ -72,12 +74,37 @@ class TableViewCell: UITableViewCell {
         
     }
     
+    func attributedString(prefixString: String,contentString: String) -> NSMutableAttributedString {
+        let commonString =  prefixString + contentString
+        let prefixRange = NSString(string: commonString).range(of: prefixString)
+        let contentRange = NSString(string: commonString).range(of: contentString)
+        return NSMutableAttributedString(string: commonString).dnp
+            .foregroundColor(UIColor.red, range: prefixRange)
+            .font(UIFont.systemFont(ofSize: 12), range: prefixRange)
+            .foregroundColor(UIColor.green, range: contentRange)
+            .font(UIFont.systemFont(ofSize: 20), range: contentRange)
+            .backgroundColor(UIColor.randomColor, range: prefixRange)
+            .backgroundColor(UIColor.randomColor, range: contentRange)
+            .object
+    }
+    
     @objc func buttonClick(sender: UIButton) {
-        print("button Click---")
+        titleLb.attributedText = self.attributedString(prefixString: "Word you see", contentString: "The Attributed Text")
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+extension UIColor {
+    static var randomColor: UIColor{
+        get{
+            let red = CGFloat(arc4random()%256)/255.0
+            let green = CGFloat(arc4random()%256)/255.0
+            let blue = CGFloat(arc4random()%256)/255.0
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+    }
 }

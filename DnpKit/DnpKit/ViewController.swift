@@ -16,6 +16,10 @@ class ViewController: UIViewController {
             .delegate(self)
             //.contentInsetAdjustmentBehavior(.never)
             //.adJustedContentIOS11()
+            .assignTo({ (tableview) in
+                //automaticallyAdjustsScrollViewInsets = true
+                tableview.backgroundColor = UIColor.cyan
+            })
             .estimatedRowHeight(70)
             .estimatedSectionFooterHeight(0)
             .estimatedSectionHeaderHeight(0)
@@ -26,7 +30,11 @@ class ViewController: UIViewController {
             .addToSuperView(self.view)
             .register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
             .register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
-            .view
+            /*.makeSnapKit { (make) in
+             make.top.equalTo(88)
+             make.left.right.bottom.equalTo(0)
+             }*/
+            .object
         return tableView
     }()
     
@@ -41,6 +49,13 @@ class ViewController: UIViewController {
                 
             }
         
+        self.dnp
+            .title("DnpKit")
+            //.automaticallyAdjustsScrollViewInsets(false)
+            .tabBarController()?.tabBar.dnp
+            .barTintColor(UIColor.white)
+            .tintColor(UIColor.magenta)
+            .barStyle(UIBarStyle.blackOpaque)
         
         
         self.tableView.dnp.makeSnapKit { (make) in

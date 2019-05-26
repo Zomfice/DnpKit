@@ -300,6 +300,11 @@ public extension DnpChain where ObjectType: UIView {
     
     //MARK: Layer
     @discardableResult
+    func layer() -> CALayer {
+        return self.chain.layer
+    }
+    
+    @discardableResult
     func shouldRasterize(_ shouldRasterize: Bool) -> DnpChain {
         self.chain.layer.shouldRasterize = shouldRasterize
         return self
@@ -458,7 +463,7 @@ public extension DnpChain where ObjectType: UIView {
     /// Do what you want with the object you create
     @discardableResult
     func assignTo(_ closure: (_ view: UIView) -> Void) -> DnpChain {
-        closure(self.view)
+        closure(self.object)
         return self
     }
     
