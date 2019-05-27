@@ -75,6 +75,7 @@ public extension DnpChain where ObjectType: UILabel {
     }
     
     @discardableResult
+    @available(iOS 9.0, *)
     func allowsDefaultTighteningForTruncation(_ allows: Bool) -> DnpChain {
         self.chain.allowsDefaultTighteningForTruncation = allows
         return self

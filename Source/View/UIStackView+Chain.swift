@@ -6,6 +6,7 @@
 //  Copyright © 2019 Zomfice. All rights reserved.
 //
 
+@available(iOS 9.0, *)
 public extension DnpChain where ObjectType: UIStackView {
     
     @discardableResult

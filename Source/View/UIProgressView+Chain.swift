@@ -51,6 +51,7 @@ public extension DnpChain where ObjectType: UIProgressView {
     }
     
     @discardableResult
+    @available(iOS 9.0, *)
     func observedProgress(_ progress: Progress?) -> DnpChain {
         self.chain.observedProgress = progress
         return self
