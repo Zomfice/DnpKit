@@ -20,11 +20,11 @@ class ViewController: UIViewController {
                 //automaticallyAdjustsScrollViewInsets = true
                 tableview.backgroundColor = UIColor.cyan
             })
-            .estimatedRowHeight(70)
+            .estimatedRowHeight(100)
             .estimatedSectionFooterHeight(0)
             .estimatedSectionHeaderHeight(0)
             .showsVerticalScrollIndicator(true)
-            .separatorStyle(.singleLine)
+            .separatorStyle(.none)
             .backgroundColor(UIColor.white)
             .backgroundView(UIView())
             .addToSuperView(self.view)
@@ -46,7 +46,6 @@ class ViewController: UIViewController {
             .backgroundColor(UIColor.red)
             .cornerRadius(5)
             .makeSnapKit { (make) in
-                
             }
         
         self.dnp
@@ -62,6 +61,7 @@ class ViewController: UIViewController {
             make.top.equalTo(0)
             make.left.right.bottom.equalTo(0)
         }
+        
         
     }
 

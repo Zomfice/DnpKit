@@ -462,7 +462,7 @@ public extension DnpChain where ObjectType: UIView {
     /// }
     /// Do what you want with the object you create
     @discardableResult
-    func assignTo(_ closure: (_ view: UIView) -> Void) -> DnpChain {
+    func assignTo(_ closure: (_ view: ObjectType) -> Void) -> DnpChain {
         closure(self.object)
         return self
     }

@@ -127,6 +127,14 @@ public extension DnpChain where ObjectType: UIButton {
     }
     
     @discardableResult
+    func titleFont(_ font: UIFont?) -> DnpChain {
+        if let m_font = font{
+            self.chain.titleLabel?.font = m_font
+        }
+        return self
+    }
+    
+    @discardableResult
     func titleFont(_ ofSize: CGFloat) -> DnpChain {
         self.chain.titleLabel?.font = UIFont.systemFont(ofSize: ofSize)
         return self

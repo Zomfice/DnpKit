@@ -21,6 +21,14 @@ public extension DnpChain where ObjectType: UILabel {
     }
     
     @discardableResult
+    func font(_ font: UIFont?) -> DnpChain {
+        if let m_font = font{
+           self.chain.font = m_font
+        }
+        return self
+    }
+    
+    @discardableResult
     func font(_ ofSize: CGFloat) -> DnpChain {
         self.chain.font = UIFont.systemFont(ofSize: ofSize)
         return self
