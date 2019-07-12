@@ -67,6 +67,7 @@
 		EF6B42A12294F3C000CB55B2 /* UICollectionViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */; };
 		EF6B42A3229506D600CB55B2 /* UIStackView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */; };
 		EF6B42A722951E6C00CB55B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */; };
+		EFEFFF2E22D881500012979B /* UIView+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFFF2D22D881500012979B /* UIView+Tool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EFEFFF2D22D881500012979B /* UIView+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Tool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,9 +339,18 @@
 				EF22B66F2294158000411C20 /* View */,
 				EF22B6702294174800411C20 /* Layer */,
 				EF22B6712294175700411C20 /* Event */,
+				EF44E84F22D87590003D298A /* Tools */,
 			);
 			name = Source;
 			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		EF44E84F22D87590003D298A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFFF2D22D881500012979B /* UIView+Tool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +579,7 @@
 				EF04DBBD2293A8EA00D026F0 /* UIActivityIndicatorView+Chain.swift in Sources */,
 				EF236073229451A10020B00D /* UISwipeGesture+Chain.swift in Sources */,
 				EF6B42A3229506D600CB55B2 /* UIStackView+Chain.swift in Sources */,
+				EFEFFF2E22D881500012979B /* UIView+Tool.swift in Sources */,
 				EF22B66C2294059700411C20 /* UICollectionViewFlowLayout+Chain.swift in Sources */,
 				EF04DBB52293905200D026F0 /* UITextField+Chain.swift in Sources */,
 				EF23606B22944E5B0020B00D /* CAReplicatorLayer+Chain.swift in Sources */,
