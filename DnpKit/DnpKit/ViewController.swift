@@ -28,8 +28,9 @@ class ViewController: UIViewController {
             .backgroundColor(UIColor.white)
             .backgroundView(UIView())
             .addToSuperView(self.view)
+            .registerCell(cell: UITableViewCell.self)
             .register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
-            .register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+            //.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
             /*.makeSnapKit { (make) in
              make.top.equalTo(88)
              make.left.right.bottom.equalTo(0)
@@ -73,7 +74,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        //let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        let cell: TableViewCell = tableView.dnp.dequeueReusableCelll(cell: TableViewCell.self, indexPath: indexPath)
         cell.selectionStyle = .none
         return cell
     }

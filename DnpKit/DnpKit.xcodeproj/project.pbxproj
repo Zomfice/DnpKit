@@ -60,6 +60,7 @@
 		EF2A6AE02292A3A000CC00F3 /* UIButton+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */; };
 		EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */; };
 		EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */; };
+		EF4FFBCA22E5A5A1009BE268 /* UITableView+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FFBC922E5A5A1009BE268 /* UITableView+Tool.swift */; };
 		EF58ABBA22978D9600E60BA5 /* UIViewController+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58ABB922978D9600E60BA5 /* UIViewController+Chain.swift */; };
 		EF58ABBC2297C03000E60BA5 /* UITabBar+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58ABBB2297C03000E60BA5 /* UITabBar+Chain.swift */; };
 		EF6B429B2294DF1900CB55B2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */; };
@@ -151,6 +152,7 @@
 		EF2A6ADF2292A3A000CC00F3 /* UIButton+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6AE12292B58A00CC00F3 /* UIControl+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chain.swift"; sourceTree = "<group>"; };
 		EF2A6B592292D1C400CC00F3 /* UIImageView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Chain.swift"; sourceTree = "<group>"; };
+		EF4FFBC922E5A5A1009BE268 /* UITableView+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Tool.swift"; sourceTree = "<group>"; };
 		EF58ABB922978D9600E60BA5 /* UIViewController+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Chain.swift"; sourceTree = "<group>"; };
 		EF58ABBB2297C03000E60BA5 /* UITabBar+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Chain.swift"; sourceTree = "<group>"; };
 		EF6B429A2294DF1900CB55B2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				EFEFFF2D22D881500012979B /* UIView+Tool.swift */,
+				EF4FFBC922E5A5A1009BE268 /* UITableView+Tool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				EF236061229447410020B00D /* CAGradientLayer+Chain.swift in Sources */,
 				EF22B65E2293DA1E00411C20 /* UINavigationBar+Chain.swift in Sources */,
 				EF2A6AE22292B58A00CC00F3 /* UIControl+Chain.swift in Sources */,
+				EF4FFBCA22E5A5A1009BE268 /* UITableView+Tool.swift in Sources */,
 				EF6B429F2294EED400CB55B2 /* UITableViewCell+Chain.swift in Sources */,
 				EF04DBC52293B28A00D026F0 /* UIBarItem+Chain.swift in Sources */,
 				EF2A6B5A2292D1C400CC00F3 /* UIImageView+Chain.swift in Sources */,
