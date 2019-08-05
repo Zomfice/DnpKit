@@ -38,7 +38,7 @@ public extension DnpChain where ObjectType: UITableView{
     }
 
     /// 复用UITableViewCell
-    func dequeueReusableCelll<T: UITableViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
+    func dequeueReusableCell<T: UITableViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
         return self.chain.dequeueReusableCell(withIdentifier: T.dnp_identifier, for: indexPath) as! T
     }
 }
@@ -57,7 +57,7 @@ public extension DnpChain where ObjectType: UICollectionView{
     }
     
     /// 复用UICollectionViewCell
-    func dequeueReusableCelll<T: UICollectionViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
+    func dequeueReusableCell<T: UICollectionViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
         return self.chain.dequeueReusableCell(withReuseIdentifier: T.dnp_identifier, for: indexPath) as! T
     }
 }
