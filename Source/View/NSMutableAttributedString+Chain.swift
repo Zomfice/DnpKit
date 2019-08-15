@@ -125,6 +125,19 @@ public extension DnpChain where ObjectType: NSMutableAttributedString {
     }
     
     @discardableResult
+    func font(_ font: UIFont?, range: NSRange? = nil) -> DnpChain {
+        guard let m_font = font else {
+            return self
+        }
+        guard let m_range = range else {
+            self.chain.addAttribute(.font, value: m_font, range: NSMakeRange(0, self.chain.length))
+            return self
+        }
+        self.chain.addAttribute(.font, value: m_font, range: m_range)
+        return self
+    }
+    
+    @discardableResult
     func font(ofSize fontSize: CGFloat, range: NSRange? = nil) -> DnpChain {
         guard let range = range else {
             self.chain.addAttribute(.font, value: UIFont.systemFont(ofSize: fontSize), range: NSMakeRange(0, self.chain.length))

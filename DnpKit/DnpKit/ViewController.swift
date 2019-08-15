@@ -75,7 +75,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        let cell: TableViewCell = tableView.dnp.dequeueReusableCelll(cell: TableViewCell.self, indexPath: indexPath)
+        let cell: TableViewCell = tableView.dnp.dequeueReusableCell(cell: TableViewCell.self, indexPath: indexPath)
         cell.selectionStyle = .none
         return cell
     }
