@@ -21,26 +21,51 @@ extension DnpCellIdentifier{
 }
 
 extension UITableViewCell : DnpCellIdentifier{}
-extension UICollectionViewCell : DnpCellIdentifier{}
+extension UITableViewHeaderFooterView: DnpCellIdentifier{}
+extension UICollectionReusableView: DnpCellIdentifier{}
 
 
 public extension DnpChain where ObjectType: UITableView{
-    /// 注册UITableViewCell
-    func registerCell<T: UITableViewCell>(cell: T.Type) -> DnpChain {
-        self.chain.register(cell, forCellReuseIdentifier: T.dnp_identifier)
-        return self
-    }
     
     /// 注册UITableViewCell of UINib
     func registerCell<T: UITableViewCell>(nibCell: T.Type) -> DnpChain {
         self.chain.register(T.dnp_nib, forCellReuseIdentifier: T.dnp_identifier)
         return self
     }
+    
+    /// 注册UITableViewCell
+    func registerCell<T: UITableViewCell>(cell: T.Type) -> DnpChain {
+        self.chain.register(cell, forCellReuseIdentifier: T.dnp_identifier)
+        return self
+    }
+    
+    /// 注册HeaderFooter of UINib
+    func registerHeaderFooter<T: UITableViewHeaderFooterView>(nib: T.Type) -> DnpChain{
+        self.chain.register(T.dnp_nib, forHeaderFooterViewReuseIdentifier: T.dnp_identifier)
+        return self
+    }
+    
+    /// 注册HeaderFooter
+    func registerHeaderFooter<T: UITableViewHeaderFooterView>(view: T.Type) -> DnpChain{
+        self.chain.register(view, forHeaderFooterViewReuseIdentifier: T.dnp_identifier)
+        return self
+    }
 
+    /// 复用UITableViewCell
+    func dequeueReusableCell<T: UITableViewCell>(cell: T.Type) -> T{
+        return self.chain.dequeueReusableCell(withIdentifier: T.dnp_identifier) as! T
+    }
+    
     /// 复用UITableViewCell
     func dequeueReusableCell<T: UITableViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
         return self.chain.dequeueReusableCell(withIdentifier: T.dnp_identifier, for: indexPath) as! T
     }
+    
+    /// 复用UITableViewHeaderFooterView
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(view: T.Type) -> T{
+        return self.chain.dequeueReusableHeaderFooterView(withIdentifier: T.dnp_identifier) as! T
+    }
+    
 }
 
 public extension DnpChain where ObjectType: UICollectionView{
@@ -51,14 +76,31 @@ public extension DnpChain where ObjectType: UICollectionView{
     }
     
     /// 注册UICollectionViewCell of UINib
-    func registerCell<T: UITableViewCell>(nibCell: T.Type) -> DnpChain {
+    func registerCell<T: UICollectionViewCell>(nibCell: T.Type) -> DnpChain {
         self.chain.register(T.dnp_nib, forCellWithReuseIdentifier: T.dnp_identifier)
+        return self
+    }
+    
+    /// 注册UICollectionReusableView
+    func registerSupplementaryView<T: UICollectionReusableView>(cell: T.Type,kind: String) -> DnpChain {
+        self.chain.register(cell, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.dnp_identifier)
+        return self
+    }
+    
+    /// 注册UICollectionReusableView of UINib
+    func registerSupplementaryView<T: UICollectionReusableView>(nib: T.Type,kind: String) -> DnpChain {
+        self.chain.register(T.dnp_nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.dnp_identifier)
         return self
     }
     
     /// 复用UICollectionViewCell
     func dequeueReusableCell<T: UICollectionViewCell>(cell: T.Type,indexPath: IndexPath) -> T{
         return self.chain.dequeueReusableCell(withReuseIdentifier: T.dnp_identifier, for: indexPath) as! T
+    }
+    
+    /// 复用UICollectionReusableView
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(cell: T.Type,kind: String,indexPath: IndexPath) -> T{
+        return self.chain.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.dnp_identifier, for: indexPath) as! T
     }
 }
 
