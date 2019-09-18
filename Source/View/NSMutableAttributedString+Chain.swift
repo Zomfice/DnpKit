@@ -356,4 +356,28 @@ public extension DnpChain where ObjectType: NSMutableAttributedString {
         self.chain.addAttribute(.verticalGlyphForm, value: verticalGlyphForm, range: range)
         return self
     }
+    
+    @discardableResult
+    func append(attrStr: NSMutableAttributedString,block: (_ attrString: inout NSMutableAttributedString) -> Void) -> DnpChain {
+        var attributeStr = attrStr
+        block(&attributeStr)
+        self.chain.append(attributeStr)
+        return self
+    }
+    
+    
+    
+    /// NSMutableAttributedString append NSAttributedString`s configuretion
+    ///
+    /// - Parameters:
+    ///   - str: String
+    ///   - block: configure attributeString`s content
+    /// - Returns: A instance of NSMutableAttributedString
+    @discardableResult
+    func append(str: String,block: (_ attrString: inout NSMutableAttributedString) -> Void) -> DnpChain {
+        var attributeStr = NSMutableAttributedString(string: str)
+        block(&attributeStr)
+        self.chain.append(attributeStr)
+        return self
+    }
 }

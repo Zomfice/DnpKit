@@ -68,6 +68,8 @@
 		EF6B42A12294F3C000CB55B2 /* UICollectionViewCell+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */; };
 		EF6B42A3229506D600CB55B2 /* UIStackView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */; };
 		EF6B42A722951E6C00CB55B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */; };
+		EF96A3452331D5BD0002944E /* NSAttributedString+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96A3442331D5BD0002944E /* NSAttributedString+Chain.swift */; };
+		EF96A3472331DA100002944E /* String+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96A3462331DA100002944E /* String+Tool.swift */; };
 		EFEFFF2E22D881500012979B /* UIView+Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFFF2D22D881500012979B /* UIView+Tool.swift */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +162,9 @@
 		EF6B42A02294F3C000CB55B2 /* UICollectionViewCell+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A2229506D600CB55B2 /* UIStackView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Chain.swift"; sourceTree = "<group>"; };
 		EF6B42A622951E6C00CB55B2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EF96A3442331D5BD0002944E /* NSAttributedString+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Chain.swift"; sourceTree = "<group>"; };
+		EF96A3462331DA100002944E /* String+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Tool.swift"; sourceTree = "<group>"; };
+		EF96A3482331E3EE0002944E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EFEFFF2D22D881500012979B /* UIView+Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Tool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +236,7 @@
 				EF04DBC82293C6B100D026F0 /* UIPickerView+Chain.swift */,
 				EF04DBCA2293CA7900D026F0 /* NotificationCenter+Chain.swift */,
 				EF22B6592293CF0900411C20 /* NSMutableAttributedString+Chain.swift */,
+				EF96A3442331D5BD0002944E /* NSAttributedString+Chain.swift */,
 				EF22B65D2293DA1E00411C20 /* UINavigationBar+Chain.swift */,
 				EF22B65F2293DB4A00411C20 /* UINavigationItem+Chain.swift */,
 				EF22B6612293E0B500411C20 /* UISegmentedControl+Chain.swift */,
@@ -313,6 +319,7 @@
 				EF2A6AA92292547200CC00F3 /* LaunchScreen.storyboard */,
 				EF2A6AAC2292547200CC00F3 /* Info.plist */,
 				EF2A6AD522925F8A00CC00F3 /* DnpKit-Bridging-Header.h */,
+				EF96A3482331E3EE0002944E /* README.md */,
 			);
 			path = DnpKit;
 			sourceTree = "<group>";
@@ -352,6 +359,7 @@
 			children = (
 				EFEFFF2D22D881500012979B /* UIView+Tool.swift */,
 				EF4FFBC922E5A5A1009BE268 /* UITableView+Tool.swift */,
+				EF96A3462331DA100002944E /* String+Tool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -539,6 +547,7 @@
 			files = (
 				EF22B6622293E0B500411C20 /* UISegmentedControl+Chain.swift in Sources */,
 				EF58ABBC2297C03000E60BA5 /* UITabBar+Chain.swift in Sources */,
+				EF96A3452331D5BD0002944E /* NSAttributedString+Chain.swift in Sources */,
 				EF04DBC32293AC8200D026F0 /* UIBarButtonItem+Chain.swift in Sources */,
 				EF04DBBB2293A55900D026F0 /* UISlider+Chain.swift in Sources */,
 				EF04DBC92293C6B100D026F0 /* UIPickerView+Chain.swift in Sources */,
@@ -556,6 +565,7 @@
 				EF22B6682293EF4800411C20 /* UITableView+Chain.swift in Sources */,
 				EF2360632294499E0020B00D /* CAScrollLayer+Chain.swift in Sources */,
 				EF22B6642293E4FF00411C20 /* UIStepper+Chain.swift in Sources */,
+				EF96A3472331DA100002944E /* String+Tool.swift in Sources */,
 				EF2A6ADE2292A00B00CC00F3 /* UILabel+Chain.swift in Sources */,
 				EF58ABBA22978D9600E60BA5 /* UIViewController+Chain.swift in Sources */,
 				EF6B42A12294F3C000CB55B2 /* UICollectionViewCell+Chain.swift in Sources */,

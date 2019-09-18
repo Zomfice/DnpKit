@@ -63,6 +63,15 @@ class ViewController: UIViewController {
             make.left.right.bottom.equalTo(0)
         }
         
+        //1. 配合addAttributes和append实现富文本的大部分操作
+        
+        NSMutableAttributedString(string: "name").dnp.append(str: "Hello") { (attr) in
+            
+        }.append(str: "AD") { (attr) in
+                
+        }.append(str: "hld") { (akttr) in
+                
+        }//.addAttributes(NSRange(location: 0, length: 0), <#NSRange#>)
         
     }
 

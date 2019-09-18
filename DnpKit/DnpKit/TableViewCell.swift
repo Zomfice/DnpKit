@@ -77,6 +77,7 @@ class TableViewCell: UITableViewCell {
     func attributedString(prefixString: String,contentString: String) -> NSMutableAttributedString {
         let commonString =  prefixString + contentString
         let prefixRange = NSString(string: commonString).range(of: prefixString)
+        
         let contentRange = NSString(string: commonString).range(of: contentString)
         return NSMutableAttributedString(string: commonString).dnp
             .foregroundColor(UIColor.red, range: prefixRange)
