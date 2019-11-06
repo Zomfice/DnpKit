@@ -21,6 +21,11 @@ target '<Your Target Name>' do
 end
 ```
 
+iOS >= 10.0 
+
+```
+pod 'DnpKit', '1.3.0'
+```
 Run the following command:
 
 ```
