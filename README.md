@@ -132,3 +132,20 @@ class ViewController: UIViewController{
     }
 }
 ```
+
+
+#### Create Code Snippet
+
+1. UILable: nl
+```
+private lazy var <#label#>Lb: UILabel = {
+    return UILabel().dnp
+        .text(<#""#>).font(<#17#>)
+        .textColor(UIColor.<#red#>)
+        .textAlignment(.<#left#>)
+        .addToSuperView(<#self.contentView#>)
+        .object
+}()
+```
+
+
