@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.3.3"
+  spec.version      = "1.3.4"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   # spec.source_files  = "Source/*.swift"
 
-  spec.dependency 'SnapKit'
+  spec.dependency 'SnapKit', '~> 4.0.0'
 
   spec.subspec 'View' do |ss|
 		ss.source_files = 'Source/View/*.swift'
