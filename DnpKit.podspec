@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.3.4"
+  spec.version      = "1.3.5"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
 
@@ -11,9 +11,9 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.platform     = :ios, "8.0"
-  # spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '8.0'
 
-  spec.swift_version  = '4.2'
+  spec.swift_version  = '5.0'
 
   spec.homepage     = "https://github.com/Zomfice/DnpKit"
 
