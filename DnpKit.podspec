@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
   #spec.ios.deployment_target = '8.0'
 
-  spec.swift_version  = '5.0'
+  spec.swift_version  = '4.2'
 
   spec.homepage     = "https://github.com/Zomfice/DnpKit"
 
