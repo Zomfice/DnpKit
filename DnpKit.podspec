@@ -10,10 +10,10 @@ Pod::Spec.new do |spec|
   		Fast Chain of Cocoa For UI , you can help you create your UI fastly
                    DESC
 
-  spec.platform     = :ios, "8.0"
-  #spec.ios.deployment_target = '8.0'
+  #spec.platform     = :ios, "8.0"
+  spec.ios.deployment_target = '8.0'
 
-  spec.swift_version  = '4.2'
+  spec.swift_version  = '5.0'
 
   spec.homepage     = "https://github.com/Zomfice/DnpKit"
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   # spec.source_files  = "Source/*.swift"
 
-  spec.dependency 'SnapKit', '~> 4.0.0'
+  spec.dependency 'SnapKit'#, '~> 4.0.0'
 
   spec.subspec 'View' do |ss|
 		ss.source_files = 'Source/View/*.swift'
