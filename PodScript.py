@@ -222,8 +222,8 @@ class PublicPod(PrivatePod):
                 podspec = i
                 print(podspec)
                 break
-        repo_push_str = "pod trunk push %s %s --allow-warnings --verbose --use-libraries" % (
-            self.specs, podspec)
+        repo_push_str = "pod trunk push %s %s --allow-warnings" % (
+            self.specs, podspec)#--verbose --use-libraries
         osSystem(repo_push_str)
         self.nextCmd(hasNext)
         return
