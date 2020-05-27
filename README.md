@@ -3,9 +3,11 @@ DnpKit is a auxiliary tool to improve your efficiency Of Coding on iOS.
 
 ## Requirements
 
-* iOS 9.0+
+* iOS 10.0+
 * Xcode 10.0+
-* Swift 4.0+
+* Swift 5.0+
+
+if platform iOS < 10.0 , install DnpKit 3.7.0 and SnapKit 4.2,Swift 4.2
 
 ## Installation
 
@@ -21,11 +23,6 @@ target '<Your Target Name>' do
 end
 ```
 
-iOS >= 10.0 
-
-```
-pod 'DnpKit', '1.3.0'
-```
 Run the following command:
 
 ```
