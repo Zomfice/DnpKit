@@ -2,16 +2,16 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.3.7"
+  spec.version      = "1.3.8"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
   spec.description  = <<-DESC
   		Fast Chain of Cocoa For UI , you can help you create your UI fastly
                    DESC
 
-  spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '10.0'
 
-  spec.swift_version  = '4.2'
+  spec.swift_version  = '5.0'
 
   spec.homepage     = "https://github.com/Zomfice/DnpKit"
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Zomfice" => "songchaofeng6@hotmail.com" }
 
-  spec.source       = { :git => "https://github.com/Zomfice/DnpKit.git", :tag => '1.3.7' }
+  spec.source       = { :git => "https://github.com/Zomfice/DnpKit.git", :tag => '1.3.8' }
 
   # spec.source_files  = "Source/*.swift"
 
