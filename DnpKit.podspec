@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DnpKit"
-  spec.version      = "1.3.8"
+  spec.version      = "1.3.8.1"
   spec.summary      = "A Cocoa chain extension,that can help you create your UI fastly"
 
   spec.description  = <<-DESC

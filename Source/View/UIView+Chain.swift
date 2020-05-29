@@ -349,8 +349,8 @@ public extension DnpChain where ObjectType: UIView {
     }
     
     @discardableResult
-    func border(_ borderWidth: CGFloat,_ borderColor: UIColor) -> DnpChain {
-        self.chain.layer.borderColor = borderColor.cgColor
+    func border(_ borderWidth: CGFloat,_ borderColor: UIColor?) -> DnpChain {
+        self.chain.layer.borderColor = borderColor?.cgColor
         self.chain.layer.borderWidth = borderWidth
         return self
     }
