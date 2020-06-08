@@ -131,7 +131,7 @@ public extension DnpChain where ObjectType: UIView {
     
     //MARK: show
     @discardableResult
-    func backgroundColor(_ backgroundColor: UIColor) -> DnpChain {
+    func backgroundColor(_ backgroundColor: UIColor?) -> DnpChain {
         self.chain.backgroundColor = backgroundColor
         return self
     }
