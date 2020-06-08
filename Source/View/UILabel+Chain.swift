@@ -41,8 +41,8 @@ public extension DnpChain where ObjectType: UILabel {
     }
     
     @discardableResult
-    func textColor(_ textColor: UIColor) -> DnpChain {
-        self.chain.textColor = textColor
+    func textColor(_ textColor: UIColor?) -> DnpChain {
+        self.chain.textColor = textColor ?? UIColor.clear
         return self
     }
     

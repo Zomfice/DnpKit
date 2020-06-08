@@ -137,8 +137,8 @@ public extension DnpChain where ObjectType: UIView {
     }
     
     @discardableResult
-    func tintColor(_ tintColor: UIColor) -> DnpChain {
-        self.chain.tintColor = tintColor
+    func tintColor(_ tintColor: UIColor?) -> DnpChain {
+        self.chain.tintColor = tintColor ?? UIColor.clear
         return self
     }
     

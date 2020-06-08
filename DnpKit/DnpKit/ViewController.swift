@@ -39,6 +39,15 @@ class ViewController: UIViewController {
         return tableView
     }()
     
+    private lazy var labelLb: UILabel = {
+        return UILabel().dnp
+            .text("").font(17)
+            .textColor(UIColor.red)
+            .textAlignment(.left)
+            .addToSuperView(self.view)
+            .object
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
